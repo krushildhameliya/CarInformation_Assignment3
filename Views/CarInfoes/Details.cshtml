@@ -1,0 +1,48 @@
+﻿@model CarInformation_Assignment3.Models.CarInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>CarInfo</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.carModel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.carModel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.carMade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.carMade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.manufacturedYear)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.manufacturedYear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fuelType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fuelType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.maxSpeed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.maxSpeed)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.carNumber">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
